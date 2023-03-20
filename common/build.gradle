@@ -1,0 +1,39 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.creek.common'
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api dep.appcompat
+    api(dep.mailcore)
+    implementation dep.router
+    implementation dep.material
+    annotationProcessor dep.router
+
+    api 'com.github.bumptech.glide:glide:4.9.0'
+    api 'androidx.recyclerview:recyclerview:1.1.0'
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+
+
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0'
+
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'top.zibin:Luban:1.1.3'
+}

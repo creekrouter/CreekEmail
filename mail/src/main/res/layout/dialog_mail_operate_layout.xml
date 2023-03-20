@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/pop_more_action_replay_all"
+            style="@style/mail_detail_more_style">
+
+            <RelativeLayout
+                style="@style/mail_detail_more_style2"
+                android:background="@drawable/bg_quick_replay">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mail_replay_all" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/mail_detail_more_style3"
+                android:text="回复全部" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_more_action_replay"
+            style="@style/mail_detail_more_style">
+
+            <RelativeLayout
+                style="@style/mail_detail_more_style2"
+                android:background="@drawable/bg_quick_replay">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/email_reply_more_reply_icon" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/mail_detail_more_style3"
+                android:text="回复" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_more_action_forward"
+            style="@style/mail_detail_more_style">
+
+            <RelativeLayout
+                style="@style/mail_detail_more_style2"
+                android:background="@drawable/bg_quick_replay">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/email_reply_more_transmit_icon" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/mail_detail_more_style3"
+                android:text="转发" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_more_action_flag"
+            style="@style/mail_detail_more_style">
+
+            <RelativeLayout
+                style="@style/mail_detail_more_style2"
+                android:background="@drawable/bg_quick_replay">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/email_reply_more_flag_icon_new" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pop_more_action_flag_tv"
+                style="@style/mail_detail_more_style3"
+                android:text="@string/email_detail_more_flag" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F2F2F2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/pop_more_action_read"
+            style="@style/mail_detail_more_style">
+
+            <RelativeLayout
+                style="@style/mail_detail_more_style2"
+                android:background="@drawable/bg_quick_replay">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/reply_more_unread_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pop_more_action_read_tv"
+                style="@style/mail_detail_more_style3"
+                android:text="@string/email_detail_more_unread" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_more_action_delete"
+            style="@style/mail_detail_more_style">
+
+            <RelativeLayout
+                style="@style/mail_detail_more_style2"
+                android:background="@drawable/bg_quick_replay">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/eamil_detail_delete_icon" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/mail_detail_more_style3"
+                android:text="@string/email_details_more_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_more_action_move"
+            style="@style/mail_detail_more_style">
+
+            <RelativeLayout
+                style="@style/mail_detail_more_style2"
+                android:background="@drawable/bg_quick_replay">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/email_reply_more_move_icon_new" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/mail_detail_more_style3"
+                android:text="@string/email_replay_move" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eamil_ll_replay_rubbish"
+            style="@style/mail_detail_more_style"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                style="@style/mail_detail_more_style2"
+                android:background="@drawable/bg_quick_replay">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/eamil_reply_more_rubbish_icon" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/mail_detail_more_style3"
+                android:text="@string/email_replay_rubbish" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_mail" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_main_body_inbox_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <com.creek.mail.home.listview.InboxListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/mail_list_view_divider"
+                android:dividerHeight="1dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@drawable/mail_list_selector"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:id="@+id/inbox_empty_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/no_mail_inbox_bg"
+                    android:layout_width="73dp"
+                    android:layout_height="64dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/no_mail_inbox" />
+
+                <TextView
+                    android:id="@+id/no_mail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/no_mail_inbox_bg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="31dp"
+                    android:text="暂无邮件"
+                    android:textColor="#888888"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/no_mail_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="您可能设置了安全锁，请前往pc端邮箱-设置中更改"
+                    android:textColor="#888888"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include
+            layout="@layout/inbox_footer_select_layout"
+            android:visibility="gone" />
+
+        <com.creek.mail.home.inbox.ComposeView
+            android:id="@+id/compose_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="53.6dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16sp" />
+
+        <com.creek.common.loadview.LoadingLine
+            android:id="@+id/loading_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

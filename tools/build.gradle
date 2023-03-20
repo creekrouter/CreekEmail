@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.mail.tools'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation dep.tika
+
+
+    implementation dep.router
+    implementation dep.appcompat
+    implementation dep.material
+    annotationProcessor dep.router
+
+    implementation project(':common')
+
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.creek.mail.compose.view.ContactViewLayout
+        android:id="@+id/compose_contact_view_mail_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.creek.mail.compose.view.ContactViewLayout
+        android:id="@+id/compose_contact_view_mail_cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.creek.mail.compose.view.ContactViewLayout
+        android:id="@+id/compose_contact_view_mail_bcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/compose_mail_subject_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22sp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/subject"
+            android:textColor="@color/text_tv_grey"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp">
+
+            <ImageView
+                android:id="@+id/iv_attach"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/write_appendix_blue_icon" />
+
+            <EditText
+                android:id="@+id/compose_mail_subject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:layout_toLeftOf="@+id/iv_attach"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:maxLines="10"
+                android:textColor="@color/text_tv_normal"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

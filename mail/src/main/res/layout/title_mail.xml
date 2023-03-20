@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title_mail"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="#f9f9f9">
+
+    <RelativeLayout
+        android:id="@+id/inbox_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/img_left_title_inbox"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/inbox_toggle_menu" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/inbox_more_action"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_menu_more_normal" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/inbox_mail_search"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/inbox_more_action"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_search_normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_center_title_inbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp">
+
+            <LinearLayout
+                android:id="@+id/ll_center_title_inbox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_center_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/inbox"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_center_title_unread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#888888"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <!--编辑状态-->
+    <RelativeLayout
+        android:id="@+id/rl_title_inbox_edite_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundtitle"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/mail_select_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="100dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_item_mail"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/selecter_mail_check"
+                android:button="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/checkbox_select_mail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@null"
+                android:paddingLeft="3dp"
+                android:text="全选"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_count_title_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="已选4封邮件"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_select_cancle_mail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#36AAFB"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <!--contact-->
+    <RelativeLayout
+        android:id="@+id/rl_title_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_left_title_contact"
+            android:layout_width="56dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:paddingTop="13dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="13dp"
+            android:src="@drawable/safe_email_home_header" />
+
+        <RelativeLayout
+            android:id="@+id/rl_center_title_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:id="@+id/ll_center_title_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tv_center_title_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="@string/mail_contacts"
+                    android:textColor="@color/text_tv_normal"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <!--邮件与文件夹-->
+    <RelativeLayout
+        android:id="@+id/rl_title_folder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/img_left_title_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/title_bar_drawer" />
+
+        <TextView
+            android:id="@+id/tv_center_title_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="bottom"
+            android:text="@string/folder"
+            android:textColor="@color/text_tv_normal"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

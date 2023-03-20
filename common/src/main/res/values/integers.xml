@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="pop_animation_duration">300</integer>
+
+    <integer name="photos_columns_easy_photos">3</integer>
+
+</resources>

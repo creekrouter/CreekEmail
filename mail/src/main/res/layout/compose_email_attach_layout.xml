@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.creek.mail.compose.view.AttachmentView
+        android:id="@+id/compose_email_attachment_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_email_reach_top"
+        android:layout_marginBottom="2dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/ll_email_reach_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentTop="true"
+            android:background="@color/line" />
+
+        <ImageView
+            android:id="@+id/rich_edit_blod"
+            style="@style/email_attach"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/compose_rich_edit_bold"
+            android:text="B" />
+
+        <ImageView
+            android:id="@+id/rich_edit_italic"
+            style="@style/email_attach"
+            android:layout_toRightOf="@+id/rich_edit_blod"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/compose_rich_edit_italic"
+            android:text="I" />
+
+
+        <ImageView
+            android:id="@+id/rich_edit_underline"
+            style="@style/email_attach"
+            android:layout_toRightOf="@+id/rich_edit_italic"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/compose_rich_edit_underline"
+            android:text="I" />
+
+        <ImageView
+            android:id="@+id/rich_edit_font_size"
+            style="@style/email_attach"
+            android:layout_toRightOf="@+id/rich_edit_underline"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/compose_rich_edit_font_size"
+            android:text="I" />
+
+
+        <ImageView
+            android:id="@+id/rich_edit_capture"
+            style="@style/email_attach"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/rich_edit_font_size"
+            android:src="@drawable/write_addappendix_camera_icon"
+            android:text="相机" />
+
+        <ImageView
+            android:id="@+id/rich_edit_photo"
+            style="@style/email_attach"
+            android:layout_toRightOf="@+id/rich_edit_capture"
+            android:src="@drawable/write_addappendix_photo_icon"
+            android:text="相册" />
+
+        <ImageView
+            android:id="@+id/rich_edit_file"
+            style="@style/email_attach"
+            android:layout_toRightOf="@+id/rich_edit_photo"
+            android:src="@drawable/write_addappendix_file_icon"
+            android:text="文件" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

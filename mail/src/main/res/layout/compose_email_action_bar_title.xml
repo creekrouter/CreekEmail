@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp">
+
+    <TextView
+        android:id="@+id/compose_email_action_bar__title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="@string/write_mail"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/compose_email_action_bar_progress"
+        android:visibility="gone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/compose_email_action_bar__title"
+        android:indeterminateDrawable="@drawable/compose_mail_progressbar_down"
+        android:progressDrawable="@drawable/compose_mail_progressbar_down" />
+
+    <ImageView
+        android:id="@+id/compose_email_action_bar_back"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/mail_edit_back" />
+
+
+    <ImageView
+        android:id="@+id/compose_email_action_bar_send"
+        android:layout_width="56dp"
+        android:layout_height="44dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/compose_email_send_icon_bg" />
+
+</RelativeLayout>

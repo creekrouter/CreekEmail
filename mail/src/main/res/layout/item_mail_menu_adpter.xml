@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_drawer_inbox_item"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/iv_drawer_inbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/drawermenu_send_black" />
+
+        <TextView
+            android:id="@+id/tv_drawer_inbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_drawer_inbox"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:text="@string/inbox"
+            android:textColor="@color/color_black_31353B"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_drawer_inbox_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:textColor="@color/text_tv_grey"
+            android:textSize="16dp" />
+
+
+        <View
+            android:id="@+id/line0_fragment_mail"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/iv_drawer_inbox"
+            android:layout_height="1dp"
+            android:background="@color/drawer_line" />
+    </RelativeLayout>
+</RelativeLayout>

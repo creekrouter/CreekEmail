@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="return_button">返回</string>
+    <string name="edit">编辑</string>
+
+    <!-- Inbox ListView -->
+    <string name="listview_head_normal">下拉刷新</string>
+    <string name="listview_head_ready">松开刷新数据</string>
+    <string name="listview_head_loading">正在加载...</string>
+    <string name="listview_head_last_time">上次更新时间：</string>
+    <string name="listview_foot_normal">查看更多</string>
+    <string name="listview_foot_ready">松开载入更多</string>
+
+
+    <string name="receiver">收件人:</string>
+    <string name="inbox">收件箱</string>
+
+
+    <!--email-->
+    <string name="folder">邮件与文件夹</string>
+    <string name="write_mail">写邮件</string>
+    <string name="cancle">取消</string>
+    <string name="blind_carbon_copy">密&#160;&#160;&#160;&#160;送:</string>
+    <string name="copy_to">抄&#160;&#160;&#160;&#160;送:</string>
+    <string name="subject">主&#160;&#160;&#160;&#160;题:</string>
+    <string name="photo_album">相册</string>
+    <string name="take_photo">拍摄</string>
+    <string name="complete">完成</string>
+    <string name="abandon_revision">删除草稿</string>
+    <string name="back_previous_level">返回上一级</string>
+    <string name="sdcard0">sdcard0</string>
+
+
+    <string name="email_cancel">取消</string>
+    <string name="email_detail_more_flag">标为红旗</string>
+    <string name="email_detail_more_unread">标为未读</string>
+    <string name="email_details_more_delete">删除</string>
+    <string name="email_replay_move">移动</string>
+    <string name="email_replay_rubbish">标为垃圾邮件</string>
+
+    <string name="mail_contacts">邮件参与人</string>
+
+    <!--新版登录专用-->
+    <string name="login">登录</string>
+    <string name="login_input_username_hint">用户名</string>
+    <string name="hint_password">密码</string>
+    <string name="login_hold_hint">自动登录</string>
+    <string name="login_forget_hint">忘记密码？</string>
+    <string name="login_register_hint">注册</string>
+    <string name="login_other_hint">其他方式登录</string>
+    <string name="register_input_username_hint">手机号</string>
+    <string name="register_username_hint">用户名</string>
+    <string name="register_sms_auth_code">短信验证码</string>
+    <string name="register_sms_hint">获取验证码</string>
+    <string name="register_sms_wait_hint">别激动,休息一下呗&#8230;</string>
+</resources>

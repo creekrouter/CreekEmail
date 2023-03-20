@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/rg_mail_filter"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp">
+
+        <RadioButton
+            android:id="@+id/rb_unread_mail_filter"
+            style="@style/tv_bg_mail_search_style"
+            android:background="@drawable/selector_right_circle_button"
+            android:button="@null"
+            android:layout_height="30sp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="未读" />
+        <View
+            android:id="@+id/filter_line_left"
+            android:layout_width="1dp"
+            android:layout_height="18sp"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"
+            android:background="#C9C9C9"/>
+        <RadioButton
+            android:id="@+id/rb_flagged_mail_filter"
+            style="@style/tv_bg_mail_search_style"
+            android:background="@drawable/selector_ranctangle_blue"
+            android:button="@null"
+            android:layout_height="30sp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="红旗" />
+        <View
+            android:id="@+id/filter_line_right"
+            android:layout_width="1dp"
+            android:layout_height="18sp"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:background="#C9C9C9"/>
+
+        <RadioButton
+            android:id="@+id/rb_attachments_mail_filter"
+            style="@style/tv_bg_mail_search_style"
+            android:background="@drawable/selector_ranctangle_right_blue"
+            android:button="@null"
+            android:layout_height="30sp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="含附件" />
+    </RadioGroup>
+
+</LinearLayout>

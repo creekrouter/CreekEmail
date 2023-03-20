@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_white_corner"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/compose_email_action_bar__title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textColor="@color/widget_color333333"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/widget_color333333"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/widget_colorf2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_left_cc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/widget_color999999"
+                android:textSize="16dp"
+                android:background="@drawable/btn_while_selector_corner10_left_bottom" />
+
+            <View
+                android:id="@+id/v_cc"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/widget_colorf2f2f2"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_right_cc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/Black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:background="@drawable/btn_while_selector_corner10_right_bottom" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

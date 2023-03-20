@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/backgroundtitle"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/compose_email_action_bar__title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="@string/write_mail"
+        android:textColor="@color/text_tv_normal"
+        android:textSize="16dp" />
+
+    <ProgressBar
+        android:id="@+id/compose_email_action_bar_progress"
+        android:visibility="gone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/compose_email_action_bar__title"
+        android:indeterminateDrawable="@drawable/compose_mail_progressbar_down"
+        android:progressDrawable="@drawable/compose_mail_progressbar_down" />
+
+    <TextView
+        android:id="@+id/compose_email_action_bar_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/cancle"
+        android:textColor="@color/text_tv_normal"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_title_left_return"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/title_bar_back"
+        android:text="@string/return_button"
+        android:visibility="gone"
+        android:textColor="@color/text_tv_normal"
+        android:textSize="13dp"
+         />
+    <ImageView
+        android:id="@+id/imgv_title_left"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/title_bar_back" />
+
+
+    <TextView
+        android:id="@+id/compose_email_action_bar_send"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/edit"
+        android:textColor="#4196FF"
+        android:textSize="13dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imgv_title_right"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/title_bar_mail"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter()
+
+        maven {
+            url 'https://creekrouter.com/maven'
+        }
+
+        maven {
+            allowInsecureProtocol true
+            url 'http://49.232.171.46/hi'
+        }
+
+    }
+}
+rootProject.name = "MyMail"
+include ':app'
+include ':mail'
+include ':tools'
+include ':database'
+include ':common'
+include ':sync'

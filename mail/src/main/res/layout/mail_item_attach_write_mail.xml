@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_mail_attachments_download"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rr_attch_mail_detail"
+        android:layout_width="120dp"
+        android:layout_height="95dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_bg_email_attach"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/item_rl_email_attach_babckground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/item_iv_default_email_attach"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/mail_detail_undownload_icon" />
+
+            <ImageView
+                android:id="@+id/item_iv_email_attach_down_finnished"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/email_image_attach"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/mail_attach_progressbar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:indeterminateDrawable="@drawable/compose_mail_progressbar_down"
+                android:progressDrawable="@drawable/compose_mail_progressbar_down"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_file_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_rl_email_attach_babckground"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="测试数据"
+            android:textColor="@color/text_tv_normal"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_file_name"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="200k/2M"
+            android:textColor="@color/text_tv_grey"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_delete_attch_mail_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/attach_item_delete" />
+</RelativeLayout>
+

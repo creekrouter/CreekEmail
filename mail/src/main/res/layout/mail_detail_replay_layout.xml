@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:id="@+id/tv_reply_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mail_shape_circle_replay"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/email_detail_reply_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:text="回复全部..." />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/btn_forward_details"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mail_detail_transmit_icon" />
+
+    <ImageView
+        android:id="@+id/iv_email_more"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/mail_detail_more_icon" />
+
+
+</LinearLayout>

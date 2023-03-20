@@ -1,0 +1,151 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" >
+
+
+    <style name="PopWindowAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="PopDownWindow">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="PopWindowStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="LeftDialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_left</item>
+        <item name="android:windowExitAnimation">@anim/exit_left</item>
+    </style>
+    <style name="RightDialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_right</item>
+        <item name="android:windowExitAnimation">@anim/exit_right</item>
+    </style>
+    <style name="TopDialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_top</item>
+        <item name="android:windowExitAnimation">@anim/exit_top</item>
+    </style>
+    <style name="BottomDialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_bottom</item>
+        <item name="android:windowExitAnimation">@anim/exit_bottom</item>
+    </style>
+
+    <style name="EasyPhotosFullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="EasyPhotosTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="OverflowButtonStyle" parent="android:Widget.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_sort_white_24dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    //====================================== Theme Electricity ===========================================
+
+    <style name="FilePicker.Elec" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/elec_primary</item>
+        <item name="colorPrimaryDark">@color/elec_primary_dark</item>
+        <item name="toolbar">@style/Toolbar.elec</item>
+        <item name="album.dropdown.title.color">@color/elec_album_dropdown_title_text</item>
+        <item name="album.dropdown.count.color">@color/elec_album_dropdown_count_text</item>
+        <item name="album.element.color">@android:color/white</item>
+        <item name="album.thumbnail.placeholder">@color/elec_album_dropdown_thumbnail_placeholder</item>
+        <item name="album.emptyView">@drawable/ic_empty_elec</item>
+        <item name="album.emptyView.textColor">@color/elec_album_empty_view</item>
+        <item name="item.placeholder">@color/elec_item_placeholder</item>
+        <item name="item.checkCircle.backgroundColor">@color/elec_item_checkCircle_backgroundColor</item>
+        <item name="item.checkCircle.borderColor">@color/elec_item_checkCircle_borderColor</item>
+        <item name="page.bg">@color/elec_page_bg</item>
+        <item name="bottomToolbar.bg">@color/elec_bottom_toolbar_bg</item>
+        <item name="bottomToolbar.preview.textColor">@color/elec_bottom_toolbar_preview</item>
+        <item name="bottomToolbar.apply.textColor">@color/elec_bottom_toolbar_apply</item>
+        <item name="preview.bottomToolbar.back.textColor">@color/elec_preview_bottom_toolbar_back_text</item>
+        <item name="preview.bottomToolbar.apply.textColor">@color/elec_preview_bottom_toolbar_apply</item>
+        <item name="listPopupWindowStyle">@style/Popup.elec</item>
+        <item name="capture.textColor">@color/elec_capture</item>
+    </style>
+
+    <style name="Toolbar.elec" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+    <style name="Popup.elec" parent="Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/elec_album_popup_bg</item>
+    </style>
+
+    //===================================== Theme Dracula ==========================================
+
+    <style name="FilePicker.Dracula" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/dracula_primary</item>
+        <item name="colorPrimaryDark">@color/dracula_primary_dark</item>
+        <item name="toolbar">@style/Toolbar.Dracula</item>
+        <item name="album.dropdown.title.color">@color/dracula_album_dropdown_title_text</item>
+        <item name="album.dropdown.count.color">@color/dracula_album_dropdown_count_text</item>
+        <item name="album.element.color">@android:color/white</item>
+        <item name="album.thumbnail.placeholder">@color/dracula_album_dropdown_thumbnail_placeholder</item>
+        <item name="album.emptyView">@drawable/ic_empty_dracula</item>
+        <item name="album.emptyView.textColor">@color/dracula_album_empty_view</item>
+        <item name="item.placeholder">@color/dracula_item_placeholder</item>
+        <item name="item.checkCircle.backgroundColor">@color/dracula_item_checkCircle_backgroundColor</item>
+        <item name="item.checkCircle.borderColor">@color/dracula_item_checkCircle_borderColor</item>
+        <item name="page.bg">@color/dracula_page_bg</item>
+        <item name="bottomToolbar.bg">@color/dracula_bottom_toolbar_bg</item>
+        <item name="bottomToolbar.preview.textColor">@color/dracula_bottom_toolbar_preview</item>
+        <item name="bottomToolbar.apply.textColor">@color/dracula_bottom_toolbar_apply</item>
+        <item name="preview.bottomToolbar.back.textColor">@color/dracula_preview_bottom_toolbar_back_text</item>
+        <item name="preview.bottomToolbar.apply.textColor">@color/dracula_preview_bottom_toolbar_apply</item>
+        <item name="android:listPopupWindowStyle">@style/Popup.Dracula</item>
+        <item name="listPopupWindowStyle">@style/Popup.Dracula</item>
+        <item name="capture.textColor">@color/dracula_capture</item>
+    </style>
+
+    <style name="FilePicker.light" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="Toolbar.Dracula" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+    <style name="Popup.Dracula" parent="Widget.AppCompat.ListPopupWindow">
+        <item name="android:popupBackground">@color/dracula_album_popup_bg</item>
+    </style>
+
+    <style name="checkbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">@color/elec_album_dropdown_count_text</item>
+        <item name="android:colorControlActivated">@color/elec_primary</item>
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item><!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0</item><!-- 灰度 -->
+    </style>
+
+
+</resources>
