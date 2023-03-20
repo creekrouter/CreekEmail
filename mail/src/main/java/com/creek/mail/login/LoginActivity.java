@@ -1,5 +1,8 @@
 package com.creek.mail.login;
 
+import static com.creek.common.constant.Const.SP_USER_EMAIL;
+import static com.creek.common.constant.Const.SP_USER_PWD;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -19,6 +22,7 @@ import com.creek.mail.R;
 import com.creek.mail.home.HomePageActivity;
 import com.mail.tools.InputWatcher;
 import com.creek.router.annotation.CreekBean;
+import com.mail.tools.MailSp;
 import com.mail.tools.MailToast;
 import com.mail.tools.ToolDip;
 
@@ -47,6 +51,17 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initView();
+
+        String address = MailSp.getString(SP_USER_EMAIL, "");
+        String session = MailSp.getString(SP_USER_PWD, "");
+
+        if (address.length() > 0 && session.length() > 0) {
+            UserInfo.setUserMail(address.trim());
+            UserInfo.setSessionId(session.trim());
+            startActivity(mContext, HomePageActivity.class);
+            finish();
+        }
+
     }
 
     //初始化视图

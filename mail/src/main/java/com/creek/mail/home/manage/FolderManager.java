@@ -1,11 +1,15 @@
 package com.creek.mail.home.manage;
 
+import static com.creek.common.constant.Const.SP_USER_EMAIL;
+import static com.creek.common.constant.Const.SP_USER_PWD;
+
 import android.os.Message;
 
 import com.creek.common.CreekPath;
 import com.creek.common.interfaces.CommonCallBack;
 import com.creek.router.CreekRouter;
 import com.creek.sync.MailSync;
+import com.mail.tools.MailSp;
 import com.mail.tools.ThreadPool;
 import com.libmailcore.IMAPFolderStatus;
 import com.creek.common.MailFolder;
@@ -120,6 +124,9 @@ public class FolderManager implements EventListen {
                     folder.setUnreadNum(imapFolderStatus.unseenCount());
                     msg.what = EventID.Folder_Normal_UnRead_Refresh;
                     mHandler.sendMessage(msg);
+
+                    MailSp.putString(SP_USER_EMAIL,UserInfo.userEmail);
+                    MailSp.putString(SP_USER_PWD,UserInfo.sessionId);
                 }
 
                 @Override

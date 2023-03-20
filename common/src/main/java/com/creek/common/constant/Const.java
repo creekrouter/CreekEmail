@@ -5,6 +5,10 @@ import com.creek.common.UserInfo;
 
 public class Const {
 
+    public static final String SP_USER_EMAIL = "sp_user_email";
+    public static final String SP_USER_PWD = "sp_user_pwd";
+
+
     public static final int page_size = 50;  //邮件分页数量
     public static final int page_load_size = 10; //断层加载一次数量
 
