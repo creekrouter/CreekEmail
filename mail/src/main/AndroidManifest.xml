@@ -3,14 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.creek.mail">
 
-    <application>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mail"
+        android:label="CreekMail"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:name="com.creek.mail.MailApplication"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <meta-data android:name="ScopedStorage" android:value="true" />
+
+
+
         <activity
             android:name=".contact.ContactsPageActivity"
             android:exported="false">
         </activity>
         <activity
             android:name=".login.LoginActivity"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".details.DetailsPageActivity"
             android:configChanges="keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize"

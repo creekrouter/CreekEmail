@@ -1,23 +1,19 @@
 plugins {
-    id 'com.android.library'
+    id 'com.android.application'
 }
 
 android {
-    compileSdkVersion 32
+    compileSdk 32
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 32
+        applicationId "com.hi.mymail"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
 
-        consumerProguardFiles "consumer-rules.pro"
     }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
+    
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

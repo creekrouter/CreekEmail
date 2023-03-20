@@ -4,14 +4,14 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
+        jcenter()
 
         maven {
             url 'https://creekrouter.com/maven'
         }
     }
 }
-rootProject.name = "MyMail"
-include ':app'
+rootProject.name = "CreekEmail"
 include ':mail'
 include ':tools'
 include ':database'

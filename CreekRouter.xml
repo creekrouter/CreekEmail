@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--    根节点至少包含一个AppModule属性,属性值为项目的ApplicationModule名称-->
-<Router AppModule="app" group="mail">
-    <Log dir="./app/build" />
+<Router AppModule="mail" group="mail">
+    <Log dir="./mail/build" />
     <Module name="mail" aliasName="MailCore" />
-    <Module name="app" aliasName="MaiApp" />
 
 </Router>
