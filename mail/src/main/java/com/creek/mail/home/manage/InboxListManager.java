@@ -149,15 +149,13 @@ public class InboxListManager implements EventListen, OnSwipeMenuItemClick {
     }
 
     private void jumpActivity(int position, List<MailBean> list) {
-        Intent intent = null;
+        Bundle bundle = new Bundle();
         //草稿箱 直接到写邮件  收件箱汉字名称依赖flag值，比较准确
         if (Const.DRAFTS.equals(folderManager.getFolder().getFolder_name_ch())) {//根据邮件箱标题类型，判断跳转哪里
-            intent = new Intent(mActivity, ComposeActivity.class);
-            intent.putExtra("type", Compose.TYPE_DRAFTS);
-            intent.putExtra("mail", list.get(position));
-            mActivity.startActivity(intent);
+            bundle.putInt("type", Compose.TYPE_DRAFTS);
+            bundle.putSerializable("mail", list.get(position));
+            Launcher.startActivity(mActivity, ComposeActivity.class, bundle);
         } else {
-            Bundle bundle = new Bundle();
             bundle.putInt(KEY_POSITION, position);
             bundle.putString(KEY_FROM, INBOX_ACTIVITY);
             Launcher.startActivity(mActivity, DetailsPageActivity.class, bundle);

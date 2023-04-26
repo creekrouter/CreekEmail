@@ -25,14 +25,9 @@ public class AttachAdapter extends RecyclerView.Adapter<AttachAdapter.ViewHolder
     private final Context mContext;
     private List<MailAttachment> mList;
     private OnItemClickListener mOnItemClickListener;
-    private OnAttachActionListener mOnItemLongClickListener;
 
     public  interface OnItemClickListener {
         void onItemClick(View view, int position);
-    }
-
-    public  interface OnAttachActionListener {
-        void onAttachItemAction(View view, int position);
     }
 
     @Override
@@ -48,9 +43,6 @@ public class AttachAdapter extends RecyclerView.Adapter<AttachAdapter.ViewHolder
         mOnItemClickListener = listener;
     }
 
-    public void setOnAttachItemActionListener(OnAttachActionListener listener) {
-        mOnItemLongClickListener = listener;
-    }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
@@ -93,7 +85,7 @@ public class AttachAdapter extends RecyclerView.Adapter<AttachAdapter.ViewHolder
         holder.ivAction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mOnItemLongClickListener.onAttachItemAction(v, position);
+                mOnItemClickListener.onItemClick(v,position);
             }
         });
     }

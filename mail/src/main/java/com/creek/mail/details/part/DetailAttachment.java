@@ -19,6 +19,7 @@ import com.creek.mail.details.msg.EvenId;
 import com.creek.mail.details.msg.MsgHandler;
 import com.creek.mail.details.msg.Event;
 import com.creek.mail.details.msg.WatchDog;
+import com.creek.mail.pages.ImageViewActivity;
 import com.creek.mail.sync.Fetcher;
 import com.creek.router.CreekRouter;
 import com.mail.tools.MailToast;
@@ -66,6 +67,7 @@ public class DetailAttachment implements WatchDog {
         String path = attachment.getFile_path();
         String name = attachment.getFile_name();
         // 查看附件
+        ImageViewActivity.goToImageActivity(mActivity,path);
     }
 
     protected final boolean download(MailAttachment attachment) {
